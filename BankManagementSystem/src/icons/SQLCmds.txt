@@ -1,0 +1,28 @@
+select * from login;
+select * from signup;
+select * from signuptwo;
+select * from signupthree;
+select * from bank;
+
+create table login(formno varchar(20), cardnumber varchar(25), pin varchar(10));
+create table bank(pin varchar(10), date varchar(50), type varchar(10), amount varchar(20));
+
+create table signup(formno varchar(20), name varchar(20), dob varchar(20), gender varchar(20), email varchar(50), state varchar(20));
+
+drop table bank;
+drop table signup;
+
+INSERT INTO login (formno, cardnumber, pin)
+VALUES (1234, 1234123412341234, 1234);
+
+show tables;
+
+show databases;
+
+use bankmanagementsystem;
+
+delete from bank;
+delete from login;
+delete from signup;
+delete from signuptwo;
+delete from signupthree;
